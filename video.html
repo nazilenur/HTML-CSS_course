@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.cdnfonts.com/css/romantic" rel="stylesheet">
+        <style>
+            body{
+               background-color: rgb(254, 103, 214);
+               opacity: 0.8;
+               
+            }
+
+            .id1{
+                color: rgb(255, 96, 170);
+                opacity:0.7;                         
+                background:rgb(255, 162, 210);
+                padding: 40px;
+                border-radius: 18px;
+                box-shadow: 0 7px 100px rgba(0, 0, 0, 0.3);
+                text-align: center;
+                font-family: 'Romantic', sans-serif;
+                box-shadow: 0 52px 40px;
+                margin: 0 auto;
+                
+            }
+            #display{
+                font-size:1.8em;
+                font-family:'Romantic', sans-serif;
+                color: #fdedf8;
+                display: block;
+                margin: 10px 0;
+
+
+            }
+            #vid {
+                display: block;
+                margin: 20px auto;
+                width: 440px;
+                box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+            }
+            #fid{
+                text-align: center;
+
+            }
+            
+            input[type="submit"] {
+    background: #ff007f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    box-shadow: 0 5px 0 #b3005e;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 2px 0 #b3005e;
+    transform: translateY(3px);
+}
+
+input[type="submit"]:hover {
+    background: #ff007f;
+    color: white;
+}
+
+           
+        </style>
+
+
+    </head>
+    <body>
+       
+        <h1 class="id1">
+            Our Video
+            <img src="images/froggy.gif" width="40px">
+        </h1><br>
+        <video id="vid" src="videos/107257-678130120_small.mp4" autoplay muted controls loop width="440px"></video>
+
+        <h2 class="id2">What score would you give our video?</h2>
+        </video><br><br>
+        <form id="fid">
+            <input type="range" id="id1" name="a" value="50" min="0" max="100" oninput="updateValue(this.value)">
+            <span id="display">50</span>
+            <input id="bid" type="submit" value="submit">
+
+              
+        </form>
+
+            <script>
+                function updateValue(value) {
+                document.getElementById("display").textContent = value;
+}
+              </script>
+    </body>
+</html>
