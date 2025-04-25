@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested Layout Exercises</title>
+
+    <style>
+
+      body{
+        background-color: pink;
+      }
+      p{
+        font-family: arial;
+      }
+      .profile-cart{
+        display: flex;
+        align-items: center;
+        border-width: 1px;
+        border-color: gray;
+        background-color: rgb(241, 245, 217);
+        width: 500px;
+        height:120px;
+
+      }
+      .cat-picture{
+        vertical-align: middle;
+      }
+      .profile-picture{
+        display: inline;
+        border-radius: 100em;
+        height: 100px;
+        
+       
+      }
+      .cat-info{        
+        display: inline-block;
+        margin-left: 15px;
+        line-height: 5px;
+        
+
+      }
+      .cat-name{
+        font-weight: bold;
+        margin: 0;
+
+  
+
+      }
+      .character{
+        color: rgb(143, 142, 142);
+
+        
+      }
+      .isPopular{
+        color: rgb(143, 142, 142);
+        font-family: 'Times New Roman', Times, serif;
+      }
+      
+      .follow-button{
+        background-color: rgb(36, 102, 225);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        cursor: pointer;
+        margin-left: 100px;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <div class="profile-cart">
+      <div class="cat-picture">
+        <img src="images/orangepp.jpg " class="profile-picture">
+      </div>
+      <div class="cat-info">
+        <p class="cat-name">oliver</p>
+        <p class="character">the cat</p>
+        <p class="isPopular">Popular</p>
+      </div>
+      <div class="follow">
+      <button class="follow-button">Follow</button>
+    </div>
+    </div>
+
+    <div class="profile-cart">
+      <div class="cat-picture">
+        <img src="images/blackpp.jpg " class="profile-picture">
+      </div>
+      <div class="cat-info">
+        <p class="cat-name">Mimi</p>
+        <p class="character">Sleepy Cat</p>
+        <p class="isPopular">Popular</p>
+      </div>
+      <div class="follow">
+      <button class="follow-button">Follow</button>
+    </div>
+    </div>
+    <div class="profile-cart">
+      <div class="cat-picture">
+        <img src="images/happubulldog.webp " class="profile-picture">
+      </div>
+      <div class="cat-info">
+        <p class="cat-name">Rex</p>
+        <p class="character">Happy Bulldog</p>
+        <p class="isPopular">Popular</p>
+      </div>
+      <div class="follow">
+      <button class="follow-button">Follow</button>
+    </div>
+    </div>
+  </body>
+</html>
