@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid Exercise</title>
+
+    <style>
+
+      *{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 40px;
+        border-width: 1px;
+        
+
+      }
+
+      .profile{
+        width: 100%;
+        box-shadow:5px 5px 5px rgba(0, 0, 0, 0.3);
+
+      }
+
+      .profile-picture{
+        width: 100%;
+        object-fit: cover;
+
+      }
+
+      .animal-name{
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 15px;
+      }
+
+      .mutual-info-row{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        margin-left: 20px;
+        vertical-align: middle;
+        align-items: center;
+      }
+
+      .mutual-profile{
+        border-radius: 50px;
+        width: 50px;
+        height: 50px;
+        vertical-align:middle;
+
+      }
+      
+      .mutual-status{
+        color: grey;
+        font-size: 12px;
+        vertical-align: middle;
+        margin-left: 8px;
+      }
+
+      .add-friend{
+        border: none;
+        background-color: rgb(0, 81, 255);
+        color: white;
+        font-size:18px;
+        border-radius: 5px;
+        box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.3);
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        cursor: pointer;
+        margin-top: 12px;
+        margin-left: 16px;
+        margin-bottom: 12px;
+      }
+
+      button:hover{
+        background-color: rgb(160, 159, 159);
+      }
+      button:active{
+        transform: scale(0.9);
+      }
+
+
+
+    </style>
+    <body>
+
+      <!--first animal-->
+
+      <div class="grid">
+        <div class="profile">
+            <img class="profile-picture" src="images/cat1.jpg">
+            <p class="animal-name">Oliver</p>
+            <div class="mutual-info-row">
+              <img src="images/dog2.jpg" class="mutual-profile">
+              <p class="mutual-status">2 mutual friends</p>
+            </div>
+          <button class="add-friend">Add Friend</button>
+        </div>
+ 
+
+       <!--second animal-->
+
+        <div class="profile">
+            <img class="profile-picture" src="images/cat2.jpg">
+            <p class="animal-name">Mimi</p>
+          
+            <div class="mutual-info-row">
+              <img src="images/dog2.jpg" class="mutual-profile">
+              <p class="mutual-status">3 mutual friends</p>
+            </div>
+           <button class="add-friend">Add Friend</button>
+        </div>
+
+
+       <!--third animal-->
+
+        <div class="profile">
+              <img class="profile-picture" src="images/dog1.jpg">
+              <p class="animal-name">Rex</p>
+            
+              <div class="mutual-info-row">
+                <img src="images/dog2.jpg" class="mutual-profile">
+                <p class="mutual-status">4 mutual friends</p>
+              </div>
+            <button class="add-friend">Add Friend</button>
+        </div>
+     </div>
+
+
+
+
+    </body>
+  </head>
+</html>
