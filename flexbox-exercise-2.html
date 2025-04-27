@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Exercise</title>
+    <style>
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: white;
+      }
+
+
+      .flexbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;        background-color: rgb(114, 14, 164);
+        border: none;
+        width: 800px;
+        height: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .page{
+        font-weight: bold;
+      }
+
+      .search-bar{
+        border-radius: 15px;
+        flex: 1;
+        max-width: 500px;
+        height: 30px;
+        border: none;
+      }
+
+      .download-button{
+        background-color: rgb(114, 14, 164);
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 2px;
+        width: 90px;
+        vertical-align: middle;
+        align-items: center;
+        height: 25px;
+        margin-right: 12px;
+        color: white;
+        padding: 2px 8px 2px 8px;
+      }
+
+      button:hover{
+        background-color: rgb(214, 141, 221);
+      }
+      button:active{
+        transform: scale(0.9);
+      }
+
+    </style>
+  </head>
+  <body>
+      <div class="flexbox">
+        <div class="page">Home</div>
+        <input class="search-bar" type="text" placeholder=" Search">
+        <button class="download-button">Download</button>
+      </div>
+    </div>
+  </body>
+</html>

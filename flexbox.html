@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+
+    <style>
+      body{
+        padding-bottom: 1000px;
+      }
+
+      .flexbox{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+      }
+
+      .div1{
+        background-color: lightblue;
+      }
+
+      .div2{
+        background-color: lightpink;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="div1">div1 text</div>
+      <div class="div2">div2<p>text</p></div>
+    </div>
+
+    <div class="flexbox">
+      <div class="div1" style="width: 100px;">div1 text</div>
+      <div class="div2" style="flex: 1;">div2<p>flex:1</p></div>
+    </div>
+
+    <div class="flexbox2" style="display: flex; justify-content: center; flex-direction: row;border-width: 2px; border-color: gray;  height: 70px;border-style: solid;">
+      <div class="div1" style="width: 100px;">100px</div>
+      <div class="div2" style="width:100px;">100px</div>
+      <div class="div1" style="width: 100px;">100px</div>
+    </div>
+
+    <div class="flexbox2" style="display: flex; justify-content: start; flex-direction: row;border-width: 2px; border-color: gray;  height: 70px;border-style: solid;">
+      <div class="div1" style="width: 100px;">100px</div>
+      <div class="div2" style="width:100px;">100px</div>
+      <div class="div1" style="width: 100px;">100px</div>
+    </div>
+    <div class="flexbox2" style="display: flex; justify-content: space-between; flex-direction: row;border-width: 2px; border-color: gray;  height: 70px;border-style: solid;">
+      <div class="div1" style="width: 100px;">100px</div>
+      <div class="div2" style="width:100px;">100px</div>
+      <div class="div1" style="width: 100px;">100px</div>
+    </div>
+    <div class="flexbox2" style="display: flex; justify-content: end; flex-direction: row;border-width: 2px; border-color: gray;  height: 70px;border-style: solid;">
+      <div class="div1" style="width: 100px;">100px</div>
+      <div class="div2" style="width:100px;">100px</div>
+      <div class="div1" style="width: 100px;">100px</div>
+    </div>
+    <div class="flexbox2" style="display: flex; justify-content:space-between; flex-direction: row;border-width: 2px; border-color: gray;  height: 70px;border-style: solid; align-items: center;">
+      <div class="div1" style="width: 100px;">100px</div>
+      <div class="div2" style="width:100px;">100px</div>
+      <div class="div1" style="width: 100px;">100px</div>
+    </div>
+
+    <div class="flexbox3" style="display: flex; flex-direction: row; margin-top: 30px;">
+      <div style="background-color: lightblue; width: 200px;">200px</div>
+      <div style="background-color: lightgreen;width: 75px;">75px</div>
+    </div>
+
+
+    <div class="flexbox3" style="display: flex; flex-direction: row; margin-top: 30px;">
+      <div style="background-color: lightblue; width: 50px;">item1</div>
+      <div style="background-color: lightgreen;flex: 1;">item2</div>
+      <div style="background-color: lightblue; width: 75px;">item3</div>
+    </div>
+
+    <div class="flexbox3" style="display: flex; flex-direction: row; margin-top: 30px; justify-content: space-between;">
+      <div style="background-color: lightblue; width: 50px;">item1</div>
+      <div style="background-color: lightgreen;width: 50px;">item2</div>
+      <div style="background-color: lightblue; width: 50px;">item3</div>
+      <div style="background-color: lightgreen;width: 50px;">item4</div>
+    </div>
+
+    <div class="flexbox3" style="display: flex; flex-direction: row; margin-top: 30px; justify-content: space-between;border-width: 1px; border-color: gray; border-style: solid; height: 50px; align-items: center;">
+      <div style="background-color: lightblue; width: 50px;">item1</div>
+      <div style="background-color: lightgreen;width: 50px;">item2</div>
+
+    </div>
+
+  </body>
+</html>
