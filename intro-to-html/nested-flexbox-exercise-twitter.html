@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Twitter Nested Flexbox Exercise</title>
+    <style>
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .twit-container{
+        display:flex;
+        flex-direction: row;
+        padding: 12px 8px 12px 6px;
+        width: 420px;
+        margin:10px 0 0 20px;
+        border-color: rgb(209, 209, 209);
+        border-width: 1px;
+        border-style: solid;
+        box-shadow:1px 2px 5px rgba(0,0,0,0.3);
+      }
+      .twit-profile{
+
+
+      }
+      .profile-picture{
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+      .twit-info{
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+      }  
+
+      .twitter-user{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5px;
+
+      }
+      .profile-name{
+        font-weight: bold;
+
+      }
+      .profile-at{
+        color: rgb(100, 100, 100);
+        margin-leftpx : 3px;
+      }
+
+      .twit-message{
+        margin-bottom: 10px;
+
+
+      }
+
+      .video-extension{
+        display: flex;
+        flex-direction: row;
+        margin-top: 1px;
+        margin-top: 5px;
+        border-color: rgb(209, 209, 209);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 0 0 0 10px;
+        border-radius: 16px;
+
+      }
+      .video-thumbnail{
+        width: 100px;
+        height: 100px;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+
+      }
+      .video-info{
+        display: flex;
+        flex-direction: column;
+        margin: 18px 0 0 14px;
+        line-height: 22px;
+        width: 220px;
+
+      }
+
+      .youtube-com{
+        color: rgb(100, 100, 100);
+        font-weight: bold;
+
+      }
+      .video-subject{
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="twit-container">
+      <div class="twitter-profile">
+        <img class="profile-picture" src="images/cat1.jpg">
+      </div>
+      <div class="twit-info">
+        <div class="twitter-user">
+          <div class="profile-name">miniKat </div>
+          <div class="profile-at">@minikitty</div> 
+        </div>
+          <div class="twit-message">
+             What is cloud computing? A complete overview.New video is up!
+          </div>
+
+         <div class="video-extension">
+          <img class="video-thumbnail" src="images/default-gray.jpg">
+          <div class="video-info">
+            <div class="youtube-com">youtube.com</div>
+            <div class="video-subject">Cloud Computing - Beginner to Pro - a complete overview</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
