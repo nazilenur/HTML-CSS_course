@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gmail Notification-Nested Flexbox Exercise</title>
+    <style>
+
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        border-color: rgb(186, 186, 186);
+        border-style: solid;
+        border-width: 1px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+        vertical-align: middle;
+        width: 410px;
+        height: 340px;
+        border-radius: 4px;
+   
+      }
+
+      .flexbox{
+        display: flex;
+        flex-direction: column;
+        border-width: 1px;
+        vertical-align: middle;
+
+      }
+
+      .box{
+        color: rgb(162, 162, 162);
+        font-size:14px ;
+        padding: 8px 0 0 18px;
+        margin-bottom: 12px;
+      }
+
+      .notification-info{
+        display: flex;
+        flex-direction: row;
+        margin-top: 10px;
+        align-items: center;
+        vertical-align: middle;
+      }
+
+      .profile-picture{
+        margin-left: 10px;
+      }
+
+      .picture{
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        object-fit: cover;
+      }
+
+      .header-time-notification{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+      }
+      .name{
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 2px;
+      }
+      .time{
+        font-size: 14px;
+        color: rgb(162, 162, 162);
+        margin-right: 10px;
+      }
+      .messages{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-left: 10px;
+      }
+
+      .subject{
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 3px;
+      }
+      .message-info{
+        color: rgb(162, 162, 162);
+      }
+
+
+    </style>
+
+  </head>
+  <body>
+
+
+        <div class="container">
+          <div class="flexbox">
+            <div class="box">ALL INBOXES</div>
+            <div class="notification-info">
+              <div class="profile-picture">
+                <img class="picture" src="images/cat2.jpg">
+              </div>
+              <div class="messages">
+              <div class="header-time-notification">
+                <div class="name">Netflix</div>
+                <div class="time">9:00AM</div>
+              </div>   
+                <div class="subject">Here's what's coming soon to Netflix</div>
+              <div class="message-info">Brand new movies and shows,old favorites...</div>
+            </div>
+              </div>
+            </div>
+
+                <div class="flexbox">
+                  <div class="notification-info">
+                    <div class="profile-picture">
+                      <img class="picture" src="images/cat1.jpg">
+                    </div>
+                    <div class="messages">
+                    <div class="header-time-notification">
+                      <div class="name">Chewy Promotions</div>
+                      <div class="time">4:58PM</div>
+                    </div>   
+                      <div class="subject">Biggest sales of the year</div>
+                    <div class="message-info">Hey there!We're writing to tell you about our...</div>
+                  </div>
+                    </div>
+                  </div>
+
+            <div class="flexbox">
+              <div class="notification-info">
+                <div class="profile-picture">
+                  <img class="picture" src="images/dog1.jpg">
+                </div>
+                <div class="messages">
+                <div class="header-time-notification">
+                  <div class="name">Best Buy</div>
+                  <div class="time">4.58PM</div>
+                </div>   
+                  <div class="subject">Your Best Buy eReceipt</div>
+                <div class="message-info">Thank you for shopping at Best Buy,here is...</div>
+              </div>
+                </div>
+              </div>
+      </div>
+
+
+  </body>
+</html>
